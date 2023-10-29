@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora-JS-Tailwind</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+	<div class="flex items-center justify-center">
+		<div class="w-80 bg-gray-300 p-4 rounded-lg">
+			<input type="text" id="res" disabled="disabled"
+				class="w-full mb-4 p-2 rounded-sm bg-gray-100 text-gray-900 text-right">
+
+			<div class="grid grid-cols-4 gap-2">
+				<button onclick="Inserir('(')" class="p-2 rounded bg-gray-200 hover:bg-gray-400">(</button>
+				<button onclick="Inserir(')')" class="p-2 rounded bg-gray-200 hover:bg-gray-400">)</button>
+				<button onclick="Limpar()" class="p-2 rounded bg-gray-200 hover:bg-gray-400">C</button>
+				<button onclick="Inserir('/')" class="p-2 rounded bg-gray-200 hover:bg-gray-400">/</button>
+
+				<button onclick="Inserir(7)" class="p-2 rounded bg-gray-200 hover:bg-gray-400">7</button>
+				<button onclick="Inserir(8)" class="p-2 rounded bg-gray-200 hover:bg-gray-400">8</button>
+				<button onclick="Inserir(9)" class="p-2 rounded bg-gray-200 hover:bg-gray-400">9</button>
+				<button onclick="Inserir('*')" class="p-2 rounded bg-gray-200 hover:bg-gray-400">*</button>
+
+				<button onclick="Inserir(4)" class="p-2 rounded bg-gray-200 hover:bg-gray-400">4</button>
+				<button onclick="Inserir(5)" class="p-2 rounded bg-gray-200 hover:bg-gray-400">5</button>
+				<button onclick="Inserir(6)" class="p-2 rounded bg-gray-200 hover:bg-gray-400">6</button>
+				<button onclick="Inserir('-')" class="p-2 rounded bg-gray-200 hover:bg-gray-400">-</button>
+
+				<button onclick="Inserir(1)" class="p-2 rounded bg-gray-200 hover:bg-gray-400">1</button>
+				<button onclick="Inserir(2)" class="p-2 rounded bg-gray-200 hover:bg-gray-400">2</button>
+				<button onclick="Inserir(3)" class="p-2 rounded bg-gray-200 hover:bg-gray-400">3</button>
+				<button onclick="Inserir('+')" class="p-2 rounded bg-gray-200 hover:bg-gray-400">+</button>
+
+				<button onclick="Inserir(0)" class="p-2 rounded bg-gray-200 hover:bg-gray-400 col-span-2">0</button>
+				<button onclick="Inserir('.')" class="p-2 rounded bg-gray-200 hover:bg-gray-400">.</button>
+				<button onclick="Calcular()" class="p-2 rounded bg-blue-400 hover:bg-blue-300">=</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="./functions/functions.js"></script>
+</body>
+
+</html>
