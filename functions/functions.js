@@ -21,3 +21,4 @@ function Calcular() {
     document.getElementById("res").value = "Erro";
   }
 }
+
